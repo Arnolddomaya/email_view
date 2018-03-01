@@ -1,6 +1,10 @@
 class EmailsController < ApplicationController
   before_action :set_email, only: [:show, :edit, :update, :destroy]
 
+
+
+
+
   # GET /emails
   # GET /emails.json
   def index
@@ -10,6 +14,11 @@ class EmailsController < ApplicationController
   # GET /emails/1
   # GET /emails/1.json
   def show
+    respond_to do |format|
+      format.html { redirect_to emails_path }
+      format.json { head :no_content }
+      format.js 
+    end
   end
 
   # GET /emails/new
