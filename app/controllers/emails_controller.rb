@@ -14,6 +14,8 @@ class EmailsController < ApplicationController
   # GET /emails/1
   # GET /emails/1.json
   def show
+    @email.read = true
+    @email.save
     respond_to do |format|
       format.html { redirect_to emails_path }
       format.json { head :no_content }
@@ -37,7 +39,7 @@ class EmailsController < ApplicationController
 
     respond_to do |format|
       if @email.save
-        format.html { redirect_to @email, notice: 'Email was successfully created.' }
+        format.html { redirect_to emails_path, notice: 'Email was successfully created.' }
         format.json { render :show, status: :created, location: @email }
       else
         format.html { render :new }
