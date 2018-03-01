@@ -26,6 +26,7 @@ body{
 .container{
   margin: auto;
   border: 2px solid black;
+  border-radius: 5px;
   width: 70%;
   height: 400px;
   background-color: #e6e6e6;
@@ -37,18 +38,34 @@ body{
 
 .container-parts{
   display: flex;
-  border: 1px solid blue;
+  border: 1px solid gray;
   height:  300px;
   background-color: white;
 }
 .table{
-  border-right: 1px solid black;
+  border-right: 2px solid black;
   height:  300px;
   overflow:scroll;
+}
+.tbody{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  margin-top: 0;
+}
+.deco-none{
+  text-decoration: none;
+
 }
 .content{
   height:  280px;
   padding:  10px 15px;
   overflow:scroll;
   overflow-x:hidden;
+  padding-right: 20px;
+}
+.new-email{
+  color: black;
 }

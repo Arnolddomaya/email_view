@@ -1,18 +1,17 @@
-<p id="notice"><%= notice %></p>
+<div class="header-content">
+  <p id="notice"><%= notice %></p>
 
 
-<p>
-  <p><h2><%= @email.object %></h2></p>
-  <strong>Body:</strong>
-  <%= @email.body %>
-</p>
+  <p>
+    <p><h2><%= @email.object %></h2></p>
+    <strong>Body:</strong>
+    <%= @email.body %>
+  </p>
 
-<p>
-  <strong>Read:</strong>
-  <%= @email.read %>
-</p>
-
-<%= link_to 'Edit', edit_email_path(@email) %> |
-<%= link_to 'Back', emails_path %> |
-<%= link_to 'Destroy', email_path(@email), method: :delete, data: { confirm: 'Are you sure?' },
-remote: true, class:'delete_email' %>
+</div>
+<div class="footer-content">
+  <%= link_to 'Edit', edit_email_path(@email) %> |
+  <%= link_to 'Back', emails_path %> |
+  <%= link_to 'Destroy', email_path(@email), method: :delete, data: { confirm: 'Are you sure?' },
+  remote: true, class:'delete_email' %>
+</div>
