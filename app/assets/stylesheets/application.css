@@ -63,15 +63,17 @@ body{
 }
 #email-object{
   /* border: 1px solid black; */
-  width: 12em;
-  border: 1px solid Silver;
 }
 
 .unread-email{
   background-color: Silver;
+  width: 12em;
+  border: 1px solid Silver;
 }
 .read-email{
   background-color: white;
+  width: 12em;
+  border: 1px solid Silver;
 }
 .deco-none{
   text-decoration: none;

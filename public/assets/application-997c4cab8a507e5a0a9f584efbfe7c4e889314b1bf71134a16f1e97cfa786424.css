@@ -1,0 +1,184 @@
+/* line 1, /home/arnold-domaya/THP/ajax/email-viewer/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /home/arnold-domaya/THP/ajax/email-viewer/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /home/arnold-domaya/THP/ajax/email-viewer/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /home/arnold-domaya/THP/ajax/email-viewer/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /home/arnold-domaya/THP/ajax/email-viewer/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /home/arnold-domaya/THP/ajax/email-viewer/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /home/arnold-domaya/THP/ajax/email-viewer/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /home/arnold-domaya/THP/ajax/email-viewer/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /home/arnold-domaya/THP/ajax/email-viewer/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /home/arnold-domaya/THP/ajax/email-viewer/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /home/arnold-domaya/THP/ajax/email-viewer/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /home/arnold-domaya/THP/ajax/email-viewer/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /home/arnold-domaya/THP/ajax/email-viewer/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /home/arnold-domaya/THP/ajax/email-viewer/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /home/arnold-domaya/THP/ajax/email-viewer/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+
+body{
+
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.container{
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 70%;
+  height: 400px;
+  background-color: #e6e6e6;
+  overflow: scroll;
+}
+.email{
+  padding-left: 10px;
+
+}
+
+.container-parts{
+  display: flex;
+  border: 1px solid gray;
+  height:  300px;
+  background-color: white;
+}
+.table{
+  border-right: 2px solid black;
+  height:  300px;
+  overflow:scroll;
+}
+.tbody{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  overflow: auto;
+
+  height: 260px;
+  width: 13em;
+
+  margin-top: 0;
+}
+#email-object{
+  /* border: 1px solid black; */
+}
+
+.unread-email{
+  background-color: Silver;
+  width: 12em;
+  border: 1px solid Silver;
+}
+.read-email{
+  background-color: white;
+  width: 12em;
+  border: 1px solid Silver;
+}
+.deco-none{
+  text-decoration: none;
+
+}
+.content{
+  height:  280px;
+  padding:  10px 15px;
+  overflow:auto;
+
+}
+.new-email{
+  color: black;
+}
