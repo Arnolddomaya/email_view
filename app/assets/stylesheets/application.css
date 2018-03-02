@@ -54,7 +54,24 @@ body{
   justify-content: flex-start;
   align-items: flex-start;
 
+  overflow: auto;
+
+  height: 260px;
+  width: 13em;
+
   margin-top: 0;
+}
+#email-object{
+  /* border: 1px solid black; */
+  width: 12em;
+  border: 1px solid Silver;
+}
+
+.unread-email{
+  background-color: Silver;
+}
+.read-email{
+  background-color: white;
 }
 .deco-none{
   text-decoration: none;
@@ -64,7 +81,7 @@ body{
   height:  280px;
   padding:  10px 15px;
   overflow:auto;
-  
+
 }
 .new-email{
   color: black;

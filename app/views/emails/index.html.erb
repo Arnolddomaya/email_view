@@ -19,9 +19,9 @@
         <% @emails.each do |email| %>
           <tr>
             <% if email.read %>
-              <td class="deco-none"><%= link_to email.object, email, remote: true, class:"unbold" %></td>
+              <td class="read-email" id="email-object"><%= link_to email.object, email, remote: true, class:"unbold" %></td>
             <% else %>
-              <td><strong><%= link_to email.object, email, remote: true, class:"unbold" %></strong></td>
+              <td class="unread-email" id="email-object"><%= link_to email.object, email, remote: true, class:"unbold" %></td>
             <% end %>
           </tr>
         <% end %>
